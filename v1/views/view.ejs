@@ -1,0 +1,32 @@
+<%- include ('partials/header') %>
+
+<div class="container">
+<header class="jumbotron">
+   <div class="container">
+    <h2>WELCOME TO YELPCAMP</h2>
+    <h4>View our campgrounds</h4>
+    <div class="text-center">
+        <h3>Want to add yours?</h3>
+    <a href="/view/add" class="btn btn-secondary btn-lg">Register</a>
+    
+    </div>
+   </div>
+</header>
+
+<div class="row">
+    <% campgrounds.forEach(function(view) { %>
+        <div class="col-sm-6 col-md-4  py-4">
+           <div class="card">
+                <img src = "<%= view.image %>" class="img-fluid card-img-top">
+            <div class= "card-body">
+                <%= view.name %>
+            </div>
+           
+           </div>
+           </div>
+    <% }) %>
+</div>
+
+
+</div>
+<%- include ('partials/footer') %>

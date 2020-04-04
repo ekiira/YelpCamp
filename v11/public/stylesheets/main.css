@@ -1,0 +1,16 @@
+#space {
+    line-height: 7px;
+    padding-bottom: 5px;
+}
+#body {
+    padding-top: 2rem;
+}
+#bottom {
+    padding-bottom: 0;
+}
+#top {
+    padding-top: 0;
+}
+.delete-form {
+    display: inline;
+}
